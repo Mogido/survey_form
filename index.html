@@ -3,65 +3,83 @@
 	<head>
 		<meta charset="utf-8">
 		<title>Survey form</title>
-		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="style.css">
 	</head>
 	<body>
-		<h1 id="title">Book readers Survey Form</h1>
-		<p id="description">Thank you for taking the time to help us collect information</p>
+		<div class="title-wrapper">
+			<h1 id="title">Book readers Survey Form</h1>
+			<p id="description">Thank you for taking the time to help us collect information</p>
+		</div>
 		<form id="survey-form">
-			<label id="name-label" for="name">Name</label>
-			<input id="name" type="text" placeholder="Enter your name" required>
-			<label id="email-label" for="email">Email</label>
-			<input id="email" type="email" placeholder="Enter your email" required>
-			<label id="number-label" for="number">Age</label>
-			<input id="number" type="number" min="10" max="99" placeholder="Age" required>
-			<label for="dropdown">Which option best describes your current role?</label>
-			<select id="dropdown">
-				<option disabled selected>Select current role</option>
-				<option>Student</option>
-				<option>Employee</option>
-				<option>Unemployed</option>
-				<option>Other</option>
-			</select>
-			<label>How many books do you read every year?
-				<label><input type="radio" name="counter">1 - 5</label>
-				<label><input type="radio" name="counter">6 - 20</label>
-				<label><input type="radio" name="counter">21 - 50</label>
-				<label><input type="radio" name="counter">51 and more</label>
-			</label>
-			<label>Which genre do you prefer to read?
-				<label><input type="checkbox" name="jenre" value="Action and adventure">Action and adventure</label>
-				<label><input type="checkbox" name="jenre" value="Alternate history">Alternate history</label>
-				<label><input type="checkbox" name="jenre" value="Anthology">Anthology</label>
-				<label><input type="checkbox" name="jenre" value="Chick lit">Chick lit</label>
-				<label><input type="checkbox" name="jenre" value="Children's">Children's</label>
-				<label><input type="checkbox" name="jenre" value="Comic book">Comic book</label>
-				<label><input type="checkbox" name="jenre" value="Coming-of-age">Coming-of-age</label>
-				<label><input type="checkbox" name="jenre" value="Crime">Crime</label>
-				<label><input type="checkbox" name="jenre" value="Drama">Drama</label>
-				<label><input type="checkbox" name="jenre" value="Fairytale">Fairytale</label>
-				<label><input type="checkbox" name="jenre" value="Fantasy">Fantasy</label>
-				<label><input type="checkbox" name="jenre" value="Graphic novel">Graphic novel</label>
-				<label><input type="checkbox" name="jenre" value="Historical fiction">Historical fiction</label>
-				<label><input type="checkbox" name="jenre" value="Horror">Horror</label>
-				<label><input type="checkbox" name="jenre" value="Mystery">Mystery</label>
-				<label><input type="checkbox" name="jenre" value="Paranormal romance">Paranormal romance</label>
-				<label><input type="checkbox" name="jenre" value="Picture book">Picture book</label>
-				<label><input type="checkbox" name="jenre" value="Poetry">Poetry</label>
-				<label><input type="checkbox" name="jenre" value="Political thriller">Political thriller</label>
-				<label><input type="checkbox" name="jenre" value="Romance">Romance</label>
-				<label><input type="checkbox" name="jenre" value="Satire">Satire</label>
-				<label><input type="checkbox" name="jenre" value="Science fiction">Science fiction</label>
-				<label><input type="checkbox" name="jenre" value="Short story">Short story</label>
-				<label><input type="checkbox" name="jenre" value="Suspense">Suspense</label>
-				<label><input type="checkbox" name="jenre" value="Thriller">Thriller</label>
-				<label><input type="checkbox" name="jenre" value="Young adult">Young adult</label>
-				<label><input type="checkbox" name="jenre" value="Non-fiction janres">Non-fiction janres</label>
-			</label>
-			<label>Want to say more?
-				<textarea name="comment" rows="10" placeholder="Enter your comment here..."></textarea>
-			</label>
-			<button id="submit" type="submit">Submit</button>
+			<div class="input-wrapper">
+				<label id="name-label" for="name">Name</label>
+				<input id="name" type="text" placeholder="Enter your name" required>
+			</div>
+			<div class="input-wrapper">
+				<label id="email-label" for="email">Email</label>
+				<input id="email" type="email" placeholder="Enter your email" required>
+			</div>
+			<div class="input-wrapper">
+				<label id="number-label" for="number">Age</label>
+				<input id="number" type="number" min="10" max="99" placeholder="Age" required>
+			</div>
+			<div class="input-wrapper">
+				<label for="dropdown">Which option best describes your current role?</label>
+				<select id="dropdown">
+					<option disabled selected>Select current role</option>
+					<option>Student</option>
+					<option>Employee</option>
+					<option>Unemployed</option>
+					<option>Other</option>
+				</select>
+			</div>
+			<div class="checkbox-wrapper">
+				<label class="check-buttons">How many books do you read every year?
+					<label><input type="radio" name="counter" value="1-5">1 - 5</label>
+					<label><input type="radio" name="counter" value="6-20">6 - 20</label>
+					<label><input type="radio" name="counter" value="21-50">21 - 50</label>
+					<label><input type="radio" name="counter" value="51+">51 and more</label>
+				</label>
+			</div>
+			<div class="checkbox-wrapper">
+				<label class="check-buttons">Which genre do you prefer to read?
+					<label><input type="checkbox" name="jenre" value="Action and adventure">Action and adventure</label>
+					<label><input type="checkbox" name="jenre" value="Alternate history">Alternate history</label>
+					<label><input type="checkbox" name="jenre" value="Anthology">Anthology</label>
+					<label><input type="checkbox" name="jenre" value="Chick lit">Chick lit</label>
+					<label><input type="checkbox" name="jenre" value="Children's">Children's</label>
+					<label><input type="checkbox" name="jenre" value="Comic book">Comic book</label>
+					<label><input type="checkbox" name="jenre" value="Coming-of-age">Coming-of-age</label>
+					<label><input type="checkbox" name="jenre" value="Crime">Crime</label>
+					<label><input type="checkbox" name="jenre" value="Drama">Drama</label>
+					<label><input type="checkbox" name="jenre" value="Fairytale">Fairytale</label>
+					<label><input type="checkbox" name="jenre" value="Fantasy">Fantasy</label>
+					<label><input type="checkbox" name="jenre" value="Graphic novel">Graphic novel</label>
+					<label><input type="checkbox" name="jenre" value="Historical fiction">Historical fiction</label>
+					<label><input type="checkbox" name="jenre" value="Horror">Horror</label>
+					<label><input type="checkbox" name="jenre" value="Mystery">Mystery</label>
+					<label><input type="checkbox" name="jenre" value="Paranormal romance">Paranormal romance</label>
+					<label><input type="checkbox" name="jenre" value="Picture book">Picture book</label>
+					<label><input type="checkbox" name="jenre" value="Poetry">Poetry</label>
+					<label><input type="checkbox" name="jenre" value="Political thriller">Political thriller</label>
+					<label><input type="checkbox" name="jenre" value="Romance">Romance</label>
+					<label><input type="checkbox" name="jenre" value="Satire">Satire</label>
+					<label><input type="checkbox" name="jenre" value="Science fiction">Science fiction</label>
+					<label><input type="checkbox" name="jenre" value="Short story">Short story</label>
+					<label><input type="checkbox" name="jenre" value="Suspense">Suspense</label>
+					<label><input type="checkbox" name="jenre" value="Thriller">Thriller</label>
+					<label><input type="checkbox" name="jenre" value="Young adult">Young adult</label>
+					<label><input type="checkbox" name="jenre" value="Non-fiction janres">Non-fiction janres</label>
+				</label>
+			</div>
+			<div class="input-wrapper">
+				<label>Want to say more?
+					<textarea class="comment-field" name="comment" rows="10" placeholder="Enter your comment here..."></textarea>
+				</label>
+			</div>
+				<div class="input-wrapper">
+				<button id="submit" type="submit">Submit</button>
+			</div>
 		</form>
 	</body>
 </html>

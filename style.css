@@ -1,0 +1,103 @@
+body {
+	background-image: url("img/bookshelf.jpg");
+	background-attachment: fixed;
+	color: #ffffff;
+	font-size: 1.3em;
+}
+
+.title-wrapper {
+	width: 40vw;
+	margin: 0 auto;
+	background-color: rgba(105, 105, 105, 0.9);
+	border-radius: 20px;
+	padding: 10px;
+	text-align: center;
+	background-color: #D2691E;
+	border: 2px solid #000000;
+}
+
+form {
+	width: 40vw;
+	margin: 1vw auto;
+	background-color: rgba(105, 105, 105, 0.9);
+	border-radius: 20px;
+	padding: 1vw;
+}
+
+input,
+select,
+textarea {
+	outline: none;
+}
+
+.input-wrapper {
+	width: 30vw;
+	margin: 1vw auto;
+}
+
+#name, #email, #number, #dropdown, .comment-field {
+	width: 29vw;
+	border: 2px solid #000000;
+	padding: 5px;
+}
+
+#name:hover,
+#name:active,
+#name:focus,
+#email:hover,
+#email:active,
+#email:focus,
+#number:hover,
+#number:active,
+#number:focus,
+#dropdown:hover,
+#dropdown:active,
+#dropdown:focus,
+.comment-field:hover,
+.comment-field:active,
+.comment-field:focus {
+	border: 2px solid #D2691E;
+}
+
+.checkbox-wrapper {
+	width: 30vw;
+	margin: 1vw auto;
+}
+
+.check-buttons {
+	display: flex;
+	flex-direction: column;
+}
+
+.check-buttons input {
+	margin: 0.5vw 1.5vw;
+}
+
+.check-buttons label:hover {
+	border: 2px solid #D2691E;
+}
+
+button {
+	padding: 0;
+	border: none;
+	font: inherit;
+	color: inherit;
+	background-color: transparent;
+	cursor: pointer;
+}
+
+#submit {
+	width: 30vw;
+	margin: 1vw auto;
+	background-color: #D2691E;
+	height: 5vw;
+}
+
+#submit:hover,
+#submit:focus {
+	border: 2px solid #000000;
+}
+
+#dropdown {
+	width: 30vw;
+}
